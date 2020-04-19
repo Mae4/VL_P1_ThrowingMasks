@@ -19,7 +19,6 @@ class Particle
     display();
   }
 
-  // Method to update position
   void update() 
   {
     velocity.add(acceleration);
@@ -31,11 +30,10 @@ class Particle
   {
     stroke(255, lifespan);
     fill(255, lifespan);
-    fill(90,255,90);
-    ellipse(position.x, position.y, 5, 5);   // Controls sizes of the particles
+    fill(90, 255, 90);
+    ellipse(position.x, position.y, 5, 5);
   }
 
-  // Is the particle still useful?
   boolean isDead() 
   {
     if (lifespan < 0.00) 
